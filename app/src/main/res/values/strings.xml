@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gordeo</string>
+    <string name="elige">Elige tu plan para hoy</string>
+    <string name="food">foodporn</string>
+    <string name="rest">Restaurantes</string>
+    <string name="ya">ya visitado</string>
+    <string name="todo">TODO</string>
+</resources>

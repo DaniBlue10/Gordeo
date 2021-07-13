@@ -5,4 +5,7 @@
     <string name="rest">Restaurantes</string>
     <string name="ya">ya visitado</string>
     <string name="todo">TODO</string>
+    <string name="comida">La comida mas sabrosa para dias especiales</string>
+    <string name="menu_principial">Menu principial</string>
+    <string name="menu_principal">menu principal</string>
 </resources>

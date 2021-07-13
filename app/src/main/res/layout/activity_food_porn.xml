@@ -11,10 +11,10 @@
         android:id="@+id/textView1"
         android:layout_width="369dp"
         android:layout_height="58dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="28dp"
-        android:text="La comida mas sabrosa para dias especiales"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/comida"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold|italic"
@@ -42,31 +42,30 @@
         android:layout_height="266dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="@+id/scrollView3"
-        app:layout_constraintTop_toTopOf="@+id/scrollView3">
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="match_parent"
-            android:layout_height="89dp"
-            app:srcCompat="@android:drawable/alert_dark_frame" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:text="TextView" />
-
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="@+id/scrollView3"/>
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="360dp"
         android:layout_height="144dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <Button
+        android:id="@+id/buttonmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#DCE775"
+        android:onClick="mostrarMenu"
+        android:text="@string/menu_principial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

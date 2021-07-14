@@ -10,4 +10,7 @@
     <string name="menu_principal">menu principal</string>
     <string name="politica_de_privacidad">politica de privacidad</string>
     <string name="ajustes">Ajustes</string>
+    <string name="textview">TextView</string>
+    <string name="descripción">...</string>
+    <string name="descripci_on">Descripciçon</string>
 </resources>

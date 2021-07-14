@@ -4,68 +4,192 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF176"
+    android:background="@drawable/degradado"
     tools:context=".FoodPornActivity">
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="369dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/comida"
-        android:textColor="#000000"
-        android:textSize="24sp"
+        android:textColor="#EDE8E8"
+        android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-        android:id="@+id/scrollView3"
-        android:layout_width="402dp"
-        android:layout_height="283dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="12dp"
+    <ImageButton
+        android:id="@+id/buttonpizza"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/food"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1">
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:srcCompat="@drawable/food" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
-    <LinearLayout
-        android:layout_width="396dp"
-        android:layout_height="266dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@+id/scrollView3"
-        app:layout_constraintTop_toTopOf="@+id/scrollView3"/>
+    <ImageButton
+        android:id="@+id/buttonCostillas"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/meat"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/buttonpizza"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:srcCompat="@drawable/meat" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="360dp"
-        android:layout_height="144dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        android:id="@+id/textViewdescripcion"
+        android:layout_width="386dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="52dp"
+        android:hint="Pulsa la comida que mas te guste"
+        android:textColor="#ECE7E7"
+        android:textColorHint="#E4DCDC"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/buttonmenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+    <ImageButton
+        android:id="@+id/buttonHamburguesa"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
-        android:background="#DCE775"
-        android:onClick="mostrarMenu"
-        android:text="@string/menu_principial"
+        android:background="@drawable/hamburguesa"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/buttonCostillas"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:srcCompat="@drawable/hamburguesa" />
+
+    <ImageButton
+        android:id="@+id/buttonNachos"
+        android:layout_width="85dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/nachos"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/buttonHamburguesa"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:srcCompat="@drawable/nachos" />
+
+    <ImageButton
+        android:id="@+id/buttonSushi"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sushi"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonpizza"
+        app:srcCompat="@drawable/sushi" />
+
+    <ImageButton
+        android:id="@+id/buttonPerrito"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/hotdog"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/buttonSushi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCostillas"
+        app:srcCompat="@drawable/hotdog" />
+
+    <ImageButton
+        android:id="@+id/buttonTaco"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rollo"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/buttonPerrito"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHamburguesa"
+        app:srcCompat="@drawable/rollo" />
+
+    <ImageButton
+        android:id="@+id/buttonSandwich"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sandwich"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/buttonTaco"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNachos"
+        app:srcCompat="@drawable/sandwich" />
+
+    <ImageButton
+        android:id="@+id/buttonPadthai"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/padthai"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSushi"
+        app:srcCompat="@drawable/padthai" />
+
+    <ImageButton
+        android:id="@+id/buttonArroz"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/friedrice"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/buttonPadthai"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPerrito"
+        app:srcCompat="@drawable/friedrice" />
+
+    <ImageButton
+        android:id="@+id/buttonTarta"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cake"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/buttonArroz"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTaco"
+        app:srcCompat="@drawable/cake" />
+
+    <ImageButton
+        android:id="@+id/buttonHeladoyGofre"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/helado"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/buttonTarta"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSandwich"
+        app:srcCompat="@drawable/helado" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

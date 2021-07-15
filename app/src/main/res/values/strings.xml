@@ -13,4 +13,18 @@
     <string name="textview">TextView</string>
     <string name="descripción">...</string>
     <string name="descripci_on">Descripciçon</string>
+    <string name="pizza">pizza</string>
+    <string name="costillas">costillas</string>
+    <string name="pulsa_la_comida_que_mas_te_guste">Pulsa la comida que mas te guste</string>
+    <string name="sushi">sushi</string>
+    <string name="nachos">nachos</string>
+    <string name="perrito">perrito</string>
+    <string name="taco">taco</string>
+    <string name="sandwich">sandwich</string>
+    <string name="hamburguesa">hamburguesa</string>
+    <string name="padthai">padthai</string>
+    <string name="arroz">arroz</string>
+    <string name="tarta">tarta</string>
+    <string name="helado">helado</string>
+    <string name="encuentra_restaurantes">Encuentra restaurantes</string>
 </resources>

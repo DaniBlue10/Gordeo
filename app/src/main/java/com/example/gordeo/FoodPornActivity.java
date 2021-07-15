@@ -14,7 +14,7 @@ public class FoodPornActivity extends AppCompatActivity {
     private ImageButton botonPizza,botonHamburguesa,botonCostillas,botonNachos,
     botonSushi,botonPerrito,botonTaco,botonSandwich,botonPadthai,botonArroz,botonTarta,
     botonHelado;
-    String texto;
+    private TextView tv1;
 
 
     @Override
@@ -22,6 +22,7 @@ public class FoodPornActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_porn);
 
+        tv1 = (TextView)findViewById(R.id.textViewdescripcion);
 
         botonPizza = (ImageButton)findViewById(R.id.buttonpizza);
         View.OnClickListener cl = new View.OnClickListener() {
@@ -94,6 +95,7 @@ public class FoodPornActivity extends AppCompatActivity {
              padthai();
             }
         };
+        botonPadthai.setOnClickListener(clickliste);
         botonArroz = (ImageButton)findViewById(R.id.buttonArroz);
         View.OnClickListener clicklisten = new View.OnClickListener() {
             @Override
@@ -101,6 +103,8 @@ public class FoodPornActivity extends AppCompatActivity {
              arroz();
             }
         };
+        botonArroz.setOnClickListener(clicklisten);
+
         botonTarta = (ImageButton)findViewById(R.id.buttonTarta);
         View.OnClickListener clicklistene = new View.OnClickListener() {
             @Override
@@ -120,21 +124,79 @@ public class FoodPornActivity extends AppCompatActivity {
 
     }
     private void pizza (){
-        if(botonPizza.isSelected()){
-            
+        if(botonPizza.isClickable()){
+            String text =("La pizza es deliciosa,de origen italiano," +
+                    " es uno de los platos más conocidos y demandados en el mundo hoy en día. Su aparición se remonta a miles de años atrás.la " +
+                    "diversidad de ingredientes la hace atractiva para niños y adultos");
+            tv1.setText(text);
 
         }
     }
-    private void hamburguesa(){}
-    private void costillas(){}
-    private void nachos(){}
-    private void sushi(){}
-    private void perrito(){}
-    private void taco(){}
-    private void sandwich(){}
-    private void padthai(){}
-    private void arroz(){}
-    private void tarta (){}
-    private void helado(){}
+    private void hamburguesa(){
+        if(botonHamburguesa.isClickable()){
+            String text = ("La hamburguesa es tipico plato de américa se pueden encontrar con huevo,bacon,queso,carnes variadas,etc");
+            tv1.setText(text);
+        }
+    }
+    private void costillas(){
+        if(botonCostillas.isClickable()){
+            String text = ("Las costillas tienen un gran sabor,se deshace en la boca, a la barbacoa o con miel,pruebalas!! ");
+            tv1.setText(text);
+        }
+    }
+    private void nachos(){
+        if(botonNachos.isClickable()){
+            String text = ("los nachos como no sean de buena calidad no son dignos de comer,plato mejicano con mucho sabor a queso y guacamole");
+            tv1.setText(text);
+        }
+    }
+    private void sushi(){
+        if(botonSushi.isClickable()){
+            String text = ("El sushi es pescado crudo,un plato japones para los más sibaritas");
+            tv1.setText(text);
+        }
+    }
+    private void perrito(){
+        if(botonPerrito.isClickable()){
+            String text = ("Salchicha en pan blando con tomate o mostaza,los perritos han decaido por su baja demanda");
+            tv1.setText(text);
+        }
+    }
+    private void taco(){
+        if(botonTaco.isClickable()){
+            String text = ("Los tacos son un plato tradicional Mexicano que puede hacerse con tortillas tiernas o crujientes,rellënalos con lo que te apetzca");
+            tv1.setText(text);
+        }
+    }
+    private void sandwich(){
+        if(botonSandwich.isClickable()){
+            String text = ("El sandwich es muy recurrido y de mucha variedad,su pan blando se acompaña de infinidad de ingredientes");
+            tv1.setText(text);
+        }
+    }
+    private void padthai(){
+        if(botonPadthai.isClickable()){
+            String text = ("Fideos con gambas tipico de tailandia,el Pad Thai está muy bueno para cualquier ocasión");
+            tv1.setText(text);
+        }
+    }
+    private void arroz(){
+        if(botonArroz.isClickable()){
+            String text = ("El arroz tres delicias es un plato muy apetitoso suele estar acompañado de jamón de york,tortillay guisantes");
+            tv1.setText(text);
+        }
+    }
+    private void tarta (){
+        if(botonTarta.isClickable()){
+            String text = ("La tarta es un postre riquísimo para darle al cerebro una recompensa placentera");
+            tv1.setText(text);
+        }
+    }
+    private void helado(){
+        if(botonHelado.isClickable()){
+            String text = ("El helado es refrescante y sabroso de muchos sabores y texturas,el helado es un placer al que pocos pueden resistirse");
+            tv1.setText(text);
+        }
+    }
 
 }

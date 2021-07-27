@@ -27,4 +27,6 @@
     <string name="tarta">tarta</string>
     <string name="helado">helado</string>
     <string name="encuentra_restaurantes">Encuentra restaurantes</string>
+    <string name="acerca_de">Acerca De</string>
+    <string name="pide_a_domicilio">pide a domicilio</string>
 </resources>

@@ -4,6 +4,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +17,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnFoodPorn,btnRest,btnDomicilio;
+    int sonidoDeReproduccion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener fd = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             mostrarFoodPorn();
+               mostrarFoodPorn();
+               mostrarsoundPool();
             }
         };
         btnFoodPorn.setOnClickListener(fd);
@@ -46,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         btnDomicilio.setOnClickListener(hl);
+
+
 
 
 
@@ -82,5 +89,10 @@ public class MainActivity extends AppCompatActivity {
     public void domicilio(){
         Intent i = new Intent (this,DomicilioActivity.class);
         startActivity(i);
+    }
+    public void mostrarsoundPool(){
+
+        MediaPlayer mp =  MediaPlayer.create(this,R.raw.cow);
+        mp.start();
     }
 }

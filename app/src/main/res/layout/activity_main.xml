@@ -53,14 +53,14 @@
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="136dp"
-        android:text="pide a domicilio"
+        android:text="@string/pide_a_domicilio"
         app:layout_constraintStart_toStartOf="@+id/tv_1"
         app:layout_constraintTop_toBottomOf="@+id/tv_1" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="440dp"
-        android:layout_height="143dp"
+        android:layout_width="387dp"
+        android:layout_height="155dp"
         android:layout_marginBottom="120dp"
         android:contentDescription="@string/hamburguesa"
         app:layout_constraintBottom_toBottomOf="parent"

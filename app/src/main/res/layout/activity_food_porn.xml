@@ -51,10 +51,10 @@
 
     <TextView
         android:id="@+id/textViewdescripcion"
-        android:layout_width="380dp"
-        android:layout_height="140dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="366dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginBottom="52dp"
         android:hint="@string/pulsa_la_comida_que_mas_te_guste"
         android:textColor="#ECE7E7"
@@ -62,7 +62,7 @@
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/buttonHamburguesa"

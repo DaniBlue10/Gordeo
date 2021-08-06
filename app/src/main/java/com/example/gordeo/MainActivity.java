@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void mostrarsoundPool(){
 
-        MediaPlayer mp =  MediaPlayer.create(this,R.raw.cow);
+        MediaPlayer mp =  MediaPlayer.create(this,R.raw.comer);
         mp.start();
     }
 }
